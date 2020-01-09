@@ -100,7 +100,7 @@ else:
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'prometeo',
             'USER': 'kaustubh',
-            'PASSWORD': 'assassin3kd',
+            'PASSWORD': 'admin123',
             'HOST': 'localhost',
             'PORT': '',
         }
