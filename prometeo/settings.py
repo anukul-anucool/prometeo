@@ -18,6 +18,10 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "staticfiles"),
+]
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -27,7 +31,7 @@ SECRET_KEY = 'zf0o(fvf3=d-ohx9dmybcw@7i7n#d7xb$nl*&wa66fuw92gb99'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.43.110', '127.0.0.1', '142.93.216.166', ]
+ALLOWED_HOSTS = ['192.168.43.110', '127.0.0.1', '142.93.216.166', '14.139.37.108', 'prometeo.in', '139.59.19.36', ]
 
 # Application definition
 
@@ -99,8 +103,8 @@ else:
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'prometeo',
-            'USER': 'root',
-            'PASSWORD': 'assassin3kd',
+            'USER': 'kaustubh',
+            'PASSWORD': 'admin123',
             'HOST': 'localhost',
             'PORT': '',
         }
@@ -129,7 +133,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Calcutta'
 
 USE_I18N = True
 
@@ -146,6 +150,10 @@ AUTH_USER_MODEL = 'users.CustomUser'
 # LOGOUT_REDIRECT_URL = 'home'
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, "staticfiles"),
+# ]
 
 AUTHENTICATION_BACKENDS = (
     "django.contrib.auth.backends.ModelBackend",
